@@ -1,3 +1,6 @@
+Codul complet fără poză — gata de copy-paste:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +9,13 @@
 <title>Operational System</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { background: #000000;; }
+html, body { background: #000000; }
 .pipeline {
-  padding: 16px 32px 0 32px;
+  padding: 16px 32px 32px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
   width: 100%;
-  position: relative;
-  z-index: 10;
 }
 .nodes {
   display: flex;
@@ -58,6 +58,7 @@ html, body { background: #000000;; }
   align-items: center;
   justify-content: center;
   transition: border-color 0.2s, transform 0.2s;
+  position: relative;
 }
 .node:hover { border-color: #666; transform: translateY(-2px); }
 .node svg { width: 26px; height: 26px; }
@@ -107,25 +108,18 @@ html, body { background: #000000;; }
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.5;
 }
-.hero-image {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-top: 30px;
-  z-index: 1;
-}
-.hero-image img {
-  width: 30%;
-  display: block;
+.subtitle {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  padding-top: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 </style>
 </head>
 <body>
 
-<div style="color:#aaa; font-size:12px; text-align:center; padding-top:24px;">
-A simplified model of a coordination system for structured operational environments.
-</div>
+<div class="subtitle">A simplified model of a coordination system for structured operational environments.</div>
 
 <div class="pipeline">
   <div class="nodes">
@@ -137,9 +131,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">Trigger</div>
-          <div class="tooltip-body">
-            External event initiates the system — structured request, CRM export, or batch input. Any structured data becomes an entry point.
-          </div>
+          <div class="tooltip-body">External event initiates the system — structured request, CRM export, or batch input. Any structured data becomes an entry point.</div>
         </div>
       </div>
       <div class="node-label">Trigger</div>
@@ -156,9 +148,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">Data Ingestion</div>
-          <div class="tooltip-body">
-            Inputs are normalized and enriched using structured external sources (APIs, CRM, internal systems). No manual interpretation.
-          </div>
+          <div class="tooltip-body">Inputs are normalized and enriched using structured external sources (APIs, CRM, internal systems). No manual interpretation.</div>
         </div>
       </div>
       <div class="node-label">Data Ingestion</div>
@@ -174,9 +164,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">Rules Engine</div>
-          <div class="tooltip-body">
-            System logic defines segmentation, transformation rules, localization, and output conditions before processing begins.
-          </div>
+          <div class="tooltip-body">System logic defines segmentation, transformation rules, localization, and output conditions before processing begins.</div>
         </div>
       </div>
       <div class="node-label">Rules Engine</div>
@@ -192,9 +180,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">Processing Layer</div>
-          <div class="tooltip-body">
-            Structured inputs are transformed into outputs using deterministic templates and automated execution pipelines.
-          </div>
+          <div class="tooltip-body">Structured inputs are transformed into outputs using deterministic templates and automated execution pipelines.</div>
         </div>
       </div>
       <div class="node-label">Processing Layer</div>
@@ -210,9 +196,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">Packaging Layer</div>
-          <div class="tooltip-body">
-            Outputs are structured into delivery-ready formats. Encoding, specification alignment, and channel formatting are resolved here.
-          </div>
+          <div class="tooltip-body">Outputs are structured into delivery-ready formats. Encoding, specification alignment, and channel formatting are resolved here.</div>
         </div>
       </div>
       <div class="node-label">Packaging Layer</div>
@@ -229,9 +213,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">Delivery</div>
-          <div class="tooltip-body">
-            Automated distribution to external endpoints (platforms, systems, or channels) with no manual execution layer.
-          </div>
+          <div class="tooltip-body">Automated distribution to external endpoints (platforms, systems, or channels) with no manual execution layer.</div>
         </div>
       </div>
       <div class="node-label">Delivery</div>
@@ -247,9 +229,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">System Lifecycle</div>
-          <div class="tooltip-body">
-            Post-delivery management including versioning, archival, cleanup, and state control. Ensures system integrity at scale.
-          </div>
+          <div class="tooltip-body">Post-delivery management including versioning, archival, cleanup, and state control. Ensures system integrity at scale.</div>
         </div>
       </div>
       <div class="node-label">System Lifecycle</div>
@@ -265,9 +245,7 @@ A simplified model of a coordination system for structured operational environme
         </svg>
         <div class="tooltip">
           <div class="tooltip-title">Asset Registry</div>
-          <div class="tooltip-body">
-            Central system for metadata, tracking, and structured documentation enabling auditability and full operational visibility.
-          </div>
+          <div class="tooltip-body">Central system for metadata, tracking, and structured documentation enabling auditability and full operational visibility.</div>
         </div>
       </div>
       <div class="node-label">Asset Registry</div>
@@ -276,9 +254,6 @@ A simplified model of a coordination system for structured operational environme
   </div>
 </div>
 
-<div class="hero-image">
-  <img src="https://freight.cargo.site/t/original/i/D2976361757348499127873756801804/saharahello-copy.png" alt="Demo" />
-</div>
-
 </body>
 </html>
+```
